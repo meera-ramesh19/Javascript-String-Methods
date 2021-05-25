@@ -13,7 +13,8 @@ array.slice(start, end)
 **Examples:**
 
 
---javascript
+
+```javascript
 
 1. let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 let citrus = fruits.slice(1, 3);
@@ -22,8 +23,9 @@ let citrus = fruits.slice(1, 3);
 2. const arr2= arr.slice()
 
 3. let animals=[‘dog’,’cat’,’elephant’,’monkey’ ,’dinosaur’]                                                                                                                      let items=animals.slice(-2)
+```
 
---
+---
 
 
 
@@ -43,7 +45,7 @@ String.inlcudes(searchString [,startposition])
 **Examples:**
 
 
---javascript
+```javascript
 
 1. const array1 = [1, 2, 3];
    console.log(array1.includes(2));
@@ -53,7 +55,9 @@ String.inlcudes(searchString [,startposition])
 
 
 3. console.log([19, 21, 46].includes(46, -1));
---
+
+```
+---
 
 
 3.#### array.indexOf()
@@ -69,7 +73,7 @@ str.indexOf(searchValue , index)
 **Examples**
 
 
---javascript
+```javascript
 
 1.  let str = 'Departed Train';                                                                                                                                                     let index = str.indexOf('Train');
 
@@ -77,8 +81,8 @@ str.indexOf(searchValue , index)
 
 3.const letters=[{letter:’a’,}, {letter:’b’,}, {letter:’c’,}, letter:’d’,},]; const index=letters.indexOf({letter:’b’,})   
 where index is -1 objects are compared by reference and not their values as the objects passed to indexOf() is completely different than the second array item.
-
---
+```
+---
 
 
 4. ####charAt() 
@@ -94,7 +98,7 @@ This method returns the character at the specified index in a string.  The only 
 **Examples:**
 
 
---javascript
+```javascript
 
 1. const sentence = 'The quick brown fox jumps over the lazy dot.’;                                                                                                           const index = 4;                                                                                                                                            console.log(`${sentence.charAt(index)}`);      
 
@@ -103,8 +107,8 @@ This method returns the character at the specified index in a string.  The only 
 
 
 3. var str = 'JavaScript is object oriented language';                                                                                                                  print(str.charAt(50));
-
---
+```
+---
 
 
 5. ####charCodeAt() 
@@ -123,7 +127,8 @@ the second last character is -2, and so on
 **Examples:**
 
 
---javascript
+
+```javascript
 
 1. var str=’ephemeral’;                                                                                                                                             print(str.charCodeAt(20));
 
@@ -133,8 +138,8 @@ let char = str.charCodeAt(0);
 console.log(char);
 
 3. var totn_string=”Tech on the Net”; console.log(totn_string.charCodeAt());
-
---
+```
+---
 
 
 6. ####concat()
@@ -153,7 +158,7 @@ string.concat(string1, string2, ..., stringX)
 **Examples: **
 
 
---javascript
+```javascript
 
 1. var str1 = "Hello ";
 var str2 = "world!";
@@ -163,8 +168,8 @@ var res = str1.concat(str2);
 2. const array1 = ['a', 'b', 'c'];                                                                                                                                           const array2 = ['d', 'e', 'f'];                                                                                                                                                   const array3 = array1.concat(array2);                                                                                                                                        console.log(array3);
 
 3.' '.concat('Good',' ','Morning');
-
---
+```
+---
 
 
 
@@ -182,7 +187,8 @@ string.split(separator, limit)
 **Examples:**
 
 
---javascript
+
+```javascript
 
 1. var str = "How are you doing today?";
 var res = str.split(" ");
@@ -192,8 +198,8 @@ var res = str.split(" ");
 
 
 3. let paragraph = 'Good Morning! How are you? This is John. John is my friend.';                                                                                                  let sentences = paragraph.split(/[!,?,.]/);                                                                                                                console.log(sentences);
-
---
+```
+---
 
 
 
@@ -209,7 +215,8 @@ string.trim()
 **Examples:**
 
 
---javascript
+
+```javascript
 
 1. const greeting = '   Hello world!   ';                                                                                                                               console.log(greeting);
 
@@ -217,8 +224,8 @@ string.trim()
 alert(str.trim());
 
 3. var str=”                  We need to get out act together”;                                                                                                           alert(Str(trim()))                         
-
---
+```
+---
 
 
 
@@ -238,7 +245,8 @@ public String toUppercase()
 **Examples:**
 
 
---javascript
+
+```javascript
 
 1. const sentence = 'The quick brown fox jumps over the lazy dog.';                                                                                         console.log(sentence.toUpperCase());
 
@@ -247,8 +255,8 @@ public String toUppercase()
 
 3. var str = "Hello World!";
 var res = str.toUpperCase();
-
---
+```
+---
 
 
 
@@ -264,8 +272,7 @@ public String toLowercase()
 
 **Examples:**
 
-
---javascript
+```javascript
 
 1. const sentence = 'The quick brown fox jumps over the lazy dog.';                                                                                        console.log(sentence.toLowerCase());
 
@@ -276,8 +283,8 @@ public String toLowercase()
  
 3. var str = "Hello World!";
 var res = str.toLowerCase();
-
---
+```
+---
 
 
 
@@ -299,7 +306,8 @@ string.search(searchvalue)
 **Examples:**
 
 
---javascript
+
+```javascript
 
 1. var str = "Visit W3Schools!";
 var n = str.search("W3Schools"); 
@@ -309,8 +317,8 @@ var n = str.search("W3Schools");
 
 
 3. const paragraph = 'The quick brown fox jumps over the lazy dog. If the dog barked, was it really lazy?';                                                                   const regex = /[^\w\s]/g;                                                                                                                   console.log(paragraph[paragraph.search(regex)]);
-
---
+```
+---
 
 
 
@@ -330,7 +338,7 @@ string.substr(start, length)
 
 **Examples:**
 
---javascript
+```javascript
 
 1. var str = "Hello world!";
 var res = str.substr(1, 4);
@@ -338,8 +346,8 @@ var res = str.substr(1, 4);
 2. const str = 'Mozilla';                                                                                                                                                console.log(str.substr(1, 2));
 
 3. let email=’john.doe@gmail.com’;                                                                                                                                               Let domain= email.substring(email.indexOf(‘@’)+1);                                                                                                                   console.log(domain);
-
---
+```
+---
 
 
 
@@ -356,7 +364,8 @@ var res = str.substr(1, 4);
 
 **Examples:**
 
---javascript
+
+```javascript
 
  1.const p = 'The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?';                                                                              const regex = /Dog/i;                                                                                                                                          console.log(p.replace(regex, 'ferret'));                                           
  
@@ -365,8 +374,8 @@ var res = str.replace("Microsoft", "W3Schools");
 
 3. let str = "I like to eat, eat, eat apples and bananas";
 let re = /apples|bananas/gi;                                                                                                                                                    let newStr = str.replace(re, (match) => {                                                                                                                                      console.log({match});                                                                                                                                                           return match.toUpperCase(); });
-
---
+```
+---
 
 
 
@@ -383,7 +392,8 @@ string.repeat(count)
 **Examples:**
 
 
---javascript
+
+```javascript
 
 1. const chorus = 'Because I\'m happy. ';                                                                                                                                  console.log(`Chorus lyrics for "Happy": ${chorus.repeat(27)}`);
  
@@ -391,8 +401,8 @@ string.repeat(count)
 console.log(str.repeat(2));
 
 3.var str=”Hello , there how are you doing?”                                                                                                                         console.log(str.repeat(2.9))
-
---
+```
+---
 
 
 
@@ -413,7 +423,7 @@ string.match(regexp)
 **Examples :**
 
 
---javascript
+```javascript
 
 1. var str = "The rain in SPAIN stays mainly in the plain";
 var res = str.match(/ain/g);     
@@ -421,6 +431,6 @@ var res = str.match(/ain/g);
 2. const paragraph = 'The quick brown fox jumps over the lazy dog. It barked.';                                                                                                const regex = /[A-Z]/g;                                                                                                                                                       const found = paragraph.match(regex);                                                                                                                                           console.log(found);
 
 3. let str = 'I like yellow color palette!';                                                                                                                                      let re = /(?<color>yellow) color/;                                                                                                                                              let result = str.match(re);                                                                                                                                          console.log(result);
-
-  --
+```
+---
 
