@@ -13,7 +13,8 @@ array.slice(start, end)
 **Examples:**
 
 
---js
+--javascript
+
 1. let fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 let citrus = fruits.slice(1, 3);
 
@@ -41,7 +42,9 @@ String.inlcudes(searchString [,startposition])
 
 **Examples:**
 
---js
+
+--javascript
+
 1. const array1 = [1, 2, 3];
    console.log(array1.includes(2));
 
@@ -65,7 +68,8 @@ str.indexOf(searchValue , index)
 
 **Examples**
 
---js
+
+--javascript
 
 1.  let str = 'Departed Train';                                                                                                                                                     let index = str.indexOf('Train');
 
@@ -73,7 +77,7 @@ str.indexOf(searchValue , index)
 
 3.const letters=[{letter:’a’,}, {letter:’b’,}, {letter:’c’,}, letter:’d’,},]; const index=letters.indexOf({letter:’b’,})   
 where index is -1 objects are compared by reference and not their values as the objects passed to indexOf() is completely different than the second array item.
-.
+
 --
 
 
@@ -89,7 +93,9 @@ This method returns the character at the specified index in a string.  The only 
 
 **Examples:**
 
---js
+
+--javascript
+
 1. const sentence = 'The quick brown fox jumps over the lazy dot.’;                                                                                                           const index = 4;                                                                                                                                            console.log(`${sentence.charAt(index)}`);      
 
 
@@ -116,8 +122,8 @@ the second last character is -2, and so on
 
 **Examples:**
 
---js
 
+--javascript
 
 1. var str=’ephemeral’;                                                                                                                                             print(str.charCodeAt(20));
 
@@ -127,6 +133,7 @@ let char = str.charCodeAt(0);
 console.log(char);
 
 3. var totn_string=”Tech on the Net”; console.log(totn_string.charCodeAt());
+
 --
 
 
@@ -145,7 +152,9 @@ string.concat(string1, string2, ..., stringX)
 
 **Examples: **
 
---js
+
+--javascript
+
 1. var str1 = "Hello ";
 var str2 = "world!";
 var res = str1.concat(str2);
@@ -172,7 +181,9 @@ string.split(separator, limit)
 
 **Examples:**
 
---js
+
+--javascript
+
 1. var str = "How are you doing today?";
 var res = str.split(" ");
 
@@ -181,6 +192,7 @@ var res = str.split(" ");
 
 
 3. let paragraph = 'Good Morning! How are you? This is John. John is my friend.';                                                                                                  let sentences = paragraph.split(/[!,?,.]/);                                                                                                                console.log(sentences);
+
 --
 
 
@@ -196,13 +208,16 @@ string.trim()
 
 **Examples:**
 
---js
+
+--javascript
+
 1. const greeting = '   Hello world!   ';                                                                                                                               console.log(greeting);
 
 2. var str = "       Hello World!        ";
 alert(str.trim());
 
 3. var str=”                  We need to get out act together”;                                                                                                           alert(Str(trim()))                         
+
 --
 
 
@@ -222,7 +237,9 @@ public String toUppercase()
 
 **Examples:**
 
---js
+
+--javascript
+
 1. const sentence = 'The quick brown fox jumps over the lazy dog.';                                                                                         console.log(sentence.toUpperCase());
 
 2. class Example {                                                                                                                                                             static void main(String[] args) {                                                                                                                                               String a = "HelloWorld;                                                                                                                                                           println(a.toUpperCase()); } }
@@ -230,6 +247,7 @@ public String toUppercase()
 
 3. var str = "Hello World!";
 var res = str.toUpperCase();
+
 --
 
 
@@ -246,7 +264,8 @@ public String toLowercase()
 
 **Examples:**
 
---js
+
+--javascript
 
 1. const sentence = 'The quick brown fox jumps over the lazy dog.';                                                                                        console.log(sentence.toLowerCase());
 
@@ -257,6 +276,7 @@ public String toLowercase()
  
 3. var str = "Hello World!";
 var res = str.toLowerCase();
+
 --
 
 
@@ -277,7 +297,9 @@ string.search(searchvalue)
 
 
 **Examples:**
---js
+
+
+--javascript
 
 1. var str = "Visit W3Schools!";
 var n = str.search("W3Schools"); 
@@ -287,6 +309,7 @@ var n = str.search("W3Schools");
 
 
 3. const paragraph = 'The quick brown fox jumps over the lazy dog. If the dog barked, was it really lazy?';                                                                   const regex = /[^\w\s]/g;                                                                                                                   console.log(paragraph[paragraph.search(regex)]);
+
 --
 
 
@@ -306,13 +329,16 @@ The substr() method returns a portion of the string, starting at the specified i
 string.substr(start, length)
 
 **Examples:**
---js
+
+--javascript
+
 1. var str = "Hello world!";
 var res = str.substr(1, 4);
 
 2. const str = 'Mozilla';                                                                                                                                                console.log(str.substr(1, 2));
 
 3. let email=’john.doe@gmail.com’;                                                                                                                                               Let domain= email.substring(email.indexOf(‘@’)+1);                                                                                                                   console.log(domain);
+
 --
 
 
@@ -330,8 +356,8 @@ var res = str.substr(1, 4);
 
 **Examples:**
 
---js
- 
+--javascript
+
  1.const p = 'The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?';                                                                              const regex = /Dog/i;                                                                                                                                          console.log(p.replace(regex, 'ferret'));                                           
  
 2. var str = "Visit Microsoft!";
@@ -339,6 +365,7 @@ var res = str.replace("Microsoft", "W3Schools");
 
 3. let str = "I like to eat, eat, eat apples and bananas";
 let re = /apples|bananas/gi;                                                                                                                                                    let newStr = str.replace(re, (match) => {                                                                                                                                      console.log({match});                                                                                                                                                           return match.toUpperCase(); });
+
 --
 
 
@@ -355,7 +382,8 @@ string.repeat(count)
 
 **Examples:**
 
---js
+
+--javascript
 
 1. const chorus = 'Because I\'m happy. ';                                                                                                                                  console.log(`Chorus lyrics for "Happy": ${chorus.repeat(27)}`);
  
@@ -384,7 +412,8 @@ string.match(regexp)
 
 **Examples :**
 
---js
+
+--javascript
 
 1. var str = "The rain in SPAIN stays mainly in the plain";
 var res = str.match(/ain/g);     
